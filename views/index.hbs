@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>App</title>
+  </head>
+  <body>
+    <ul>
+      {{#each vars}}
+        <li>
+          <a href='/var/{{this}}'>
+            {{this}}
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </body>
+</html>
