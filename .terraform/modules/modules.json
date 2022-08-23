@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"artifact-registry","Source":"./terraform/artifact-registry","Dir":"terraform/artifact-registry"},{"Key":"cloud-run","Source":"./terraform/cloud-run","Dir":"terraform/cloud-run"}]}
