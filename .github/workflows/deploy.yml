@@ -42,7 +42,7 @@ jobs:
 
       - name: Google Auth
         id: google-auth
-      - uses: google-github-actions/setup-gcloud@master
+        uses: google-github-actions/setup-gcloud@master
         with:
           service_account_key: ${{ secrets.GCP_CREDENTIALS }}
           project_id: ${{ env.GCP_PROJECT_ID }}
