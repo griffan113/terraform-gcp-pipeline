@@ -18,7 +18,8 @@ terraform {
 
 # Configure GCP project
 provider "google" {
-  project = var.project
+  project      = var.project
+  access_token = var.access_token
 }
 
 module "cloud-run" {
