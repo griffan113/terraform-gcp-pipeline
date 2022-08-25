@@ -22,5 +22,8 @@ provider "google" {
 }
 
 module "cloud-run" {
-  source = "../../modules/cloud-run"
+  source = "./modules/cloud-run"
+  container_image = var.container_image
+  project = var.project
+  location = var.location
 }
