@@ -45,3 +45,4 @@ resource "google_cloud_run_service_iam_policy" "noauth" {
 
   policy_data = data.google_iam_policy.noauth.policy_data
 }
+
