@@ -28,3 +28,7 @@ module "cloud-run" {
   project         = var.project
   location        = var.location
 }
+
+output "service_url" {
+  value = module.cloud-run.service_url
+}
