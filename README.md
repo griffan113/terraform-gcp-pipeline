@@ -45,16 +45,28 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Deploy
+## Docker Compose Running
+
+```bash
+$ docker compose up
+```
+
+## Manual Deploy
 
 ```bash
 $ gcloud auth configure-docker us-east1-docker.pkg.dev
 
 $ docker build -t gcloud_app .
 
-$ docker tag gcloud_app us-east1-docker.pkg.dev/${project_id}/gcloud_app/gcloud_app:1.0
+$ docker tag gcloud_app us-east1-docker.pkg.dev/${project_id}/images/gcloud_app:latest
 
-$ docker push us-east1-docker.pkg.dev/${project_id}/gcloud_app/gcloud_app:1.0
+$ docker push us-east1-docker.pkg.dev/${project_id}/images/gcloud_app:latest
+
+$ terraform init
+
+$ terraform plan
+
+$ terraform apply
 ```
 
 ## Test

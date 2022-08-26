@@ -18,7 +18,8 @@ terraform {
 
 # Configure GCP project
 provider "google" {
-  project = var.project
+  project      = var.project
+  access_token = var.access_token
 }
 
 module "cloud-run" {
@@ -26,4 +27,8 @@ module "cloud-run" {
   container_image = var.container_image
   project         = var.project
   location        = var.location
+}
+
+output "service_url" {
+  value = module.cloud-run.service_url
 }

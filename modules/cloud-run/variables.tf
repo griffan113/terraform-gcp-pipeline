@@ -1,3 +1,3 @@
 variable "project" {}
-variable container_image {}
-variable location {}
+variable "container_image" {}
+variable "location" {}
